@@ -3,8 +3,7 @@ package software.ulpgc.kata2;
 public class Pokedex {
     private final int id;
     private final String name;
-    private final int generation;
-
+    private  final int generation;
     private final int numAbilities;
 
     public Pokedex(int id, String name, int generation, int numAbilities) {

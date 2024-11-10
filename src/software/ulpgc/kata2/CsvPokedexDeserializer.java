@@ -1,8 +1,9 @@
 package software.ulpgc.kata2;
 
 public class CsvPokedexDeserializer implements PokedexDeserializer {
+
     @Override
-    public Pokedex deserialize(String line){
+    public  Pokedex deserialize(String line){
         return deserialize(line.split(";"));
     }
 

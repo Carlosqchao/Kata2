@@ -1,4 +1,6 @@
-package software.ulpgc.kata2;
+package software.ulpgc.kata2.io;
+
+import software.ulpgc.kata2.model.Pokedex;
 
 public class CsvPokedexDeserializer implements PokedexDeserializer {
 
@@ -9,7 +11,7 @@ public class CsvPokedexDeserializer implements PokedexDeserializer {
 
 
     private Pokedex deserialize(String[] fields){
-        return new Pokedex(toInt(fields[1]),fields[2],toInt(fields[5]),toInt(fields[15]));
+        return new Pokedex(toInt(fields[1]),fields[2],toInt(fields[5]),Double.parseDouble(fields[14]));
     }
 
     private int toInt(String field) {

@@ -1,16 +1,16 @@
-package software.ulpgc.kata2;
+package software.ulpgc.kata2.model;
 
 public class Pokedex {
     private final int id;
     private final String name;
     private final int generation;
-    private final int numAbilities;
+    private final double numAbilities;
 
-    public Pokedex(int id, String name, int generation, int numAbilities) {
+    public Pokedex(int id, String name, int generation, double weight) {
         this.id = id;
         this.name = name;
         this.generation = generation;
-        this.numAbilities = numAbilities;
+        this.numAbilities = weight;
     }
 
     public int getId() {
@@ -25,7 +25,7 @@ public class Pokedex {
         return generation;
     }
 
-    public int getNumAbilities() {
+    public double getNumAbilities() {
         return numAbilities;
     }
 
